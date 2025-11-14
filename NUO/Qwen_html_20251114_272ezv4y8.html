@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas | Pixel Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1><span>P</span>IXEL <span>C</span>AFÉ</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="gaming.html">Gaming Zone</a></li>
+        <li><a href="reserva.html">Reservas</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Reservas -->
+  <section class="section dark">
+    <div class="container">
+      <h2>Reserva la teva taula o la teva zona gamer.</h2>
+      <p>Omple el formulari i digue’ns si vens a menjar, a jugar o a totes dues coses. Prepararem la taula i la zona de joc perquè només t’hagis de preocupar de triar el joc.</p>
+
+      <form id="reservation-form">
+        <input type="text" placeholder="Nom i cognoms" required>
+        <input type="email" placeholder="Correu electrònic" required>
+        <input type="tel" placeholder="Telèfon" required>
+        <input type="number" placeholder="Nombre de persones" required>
+        <select required>
+          <option value="">Tipus de reserva</option>
+          <option value="menjar">Només menjar</option>
+          <option value="gaming">Només gaming</option>
+          <option value="ambos">Menjar + gaming</option>
+        </select>
+        <select>
+          <option value="qualsevol">Zona de joc preferida (opcional)</option>
+          <option value="play">Play</option>
+          <option value="xbox">Xbox</option>
+          <option value="vr">VR</option>
+        </select>
+        <input type="datetime-local" required>
+        <textarea placeholder="Missatge / comentaris"></textarea>
+        <button type="submit" class="btn">Confirmar reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Pixel Café — Todos los derechos reservados</p>
+    <p>Hecho con 💜 en Girona</p>
+  </footer>
+
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = 'thank-you.html';
+    });
+  </script>
+</body>
+</html>

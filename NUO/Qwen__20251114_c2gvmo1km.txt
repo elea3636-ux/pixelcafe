@@ -1,0 +1,10 @@
+pixelcafe/
+│
+├── index.html              ← Home (Hero + intro)
+├── menu.html               ← Página de menú
+├── gaming.html             ← Página de gaming
+├── reserva.html            ← Página de reservas
+├── contact.html            ← Página de contacto
+├── thank-you.html          ← Página de éxito tras reserva
+├── style.css               ← Estilo global
+└── README.md               ← Instrucciones
